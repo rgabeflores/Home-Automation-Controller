@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container-fluid" id="body-wrapper">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-lg-1">
+                    <div class="loading-indicator">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="jumbotron" id="banner">
+            <h1>RaspberryPi Control Server</h1>
+            <p>
+                IP Address: 192.168.1.69 <br>
+                Default Gateway: 192.168.1.1 <br>
+                Subnet Mask: 255.255.255.0
+            </p>
+        </div>
+        <div class="container">
+            <div class="row justify-content-md-center toggle-row" id="led-strip-toggle-row">
+                <div class="col-8">
+                    <h3>LED Strip</h3>
+                </div>
+                <div class="col-4">
+                    <label class="switch">
+                      <input type="checkbox" name="led-toggle"> <!-- if LED_TOGGLED append "checked" -->
+                      <span class="slider round off"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row justify-content-md-center toggle-row" id="led-strip-toggle-row">
+                <div class="col-8">
+                    <h3>TBD</h3>
+                </div>
+                <div class="col-4">
+                    <label class="switch">
+                      <input type="checkbox" name="tbd-toggle">
+                      <span class="slider round off"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row justify-content-md-center toggle-row" id="led-strip-toggle-row">
+                <div class="col-8">
+                    <h3>TBD</h3>
+                </div>
+                <div class="col-4">
+                    <label class="switch">
+                      <input type="checkbox" name="tbd-toggle">
+                      <span class="slider round off"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+</div>
+
+{% endblock %}

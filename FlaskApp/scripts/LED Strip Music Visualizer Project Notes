@@ -1,0 +1,13 @@
+LED Strip Music Visualizer Project Notes
+
+@ 192.168.1.12 //192.168.1.17
+
+user: pi
+password: raspberry
+
+
+Current Issues:
+	All LEDs remain bright despite audio level
+		Mic catches extra noise?
+			Cover with fabric-like material to catch wind
+		Hardware not secure (logic level converter)
