@@ -3,15 +3,26 @@ $( "[type=checkbox]" ).click(function(){
 });
 
 function toggleAPI(toggler){
-    console.log("Name: " + toggler.name + "; Status: " + toggler.checked);
-    // Check the "checked" attribute
-    // if TRUE:
-    //   startAPI(toggler.name)
-    // else:
-    //   stopAPI(toggler.name)
 
-    /*
-        NOTES:
-            - encapsulate start/stop options in Python?
-    */
+    var url = '/' + toggler.name + '?status=';
+
+    if(toggler.checked)
+        url += '1';
+    else
+        url += '0';
+
+    console.log(url);
+    requestURL(url);
+
+}
+
+function requestURL(url){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log(this.responseText);
+    }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
 }
