@@ -20,4 +20,7 @@ These files are for the RaspberryPi's web server.
 ### Flask App Files
     /FlaskApp
 
+These files are for the Flask API and web interface.
+
+
 Includes a slightly modified version of https://github.com/scottlawsonbc/audio-reactive-led-strip as one example of IoT functions
