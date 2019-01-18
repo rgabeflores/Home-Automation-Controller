@@ -253,9 +253,7 @@ visualization_effect = visualize_spectrum
 #visualization_effect = visualize_energy
 
 """Visualization effect to display on the LED strip"""
-
-
-def main():
+if __name__ == '__main__':
     if config.USE_GUI:
         import pyqtgraph as pg
         from pyqtgraph.Qt import QtGui, QtCore
@@ -361,7 +359,3 @@ def main():
     led.update()
     # Start listening to live audio stream
     microphone.start_stream(microphone_update)
-
-
-if __name__ == '__main__':
-    main()
