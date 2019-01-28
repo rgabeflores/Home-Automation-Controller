@@ -1,5 +1,5 @@
 # RaspberryPi-IoT-Controller-with-Flask
-A web controlled RaspberryPi server with Flask REST API on Nginx, Gunicorn, and Supervisor. Easily create API endpoints to install and control a network of devices.
+A web controlled RaspberryPi server with Flask REST API on Nginx, Gunicorn, and Supervisor. Easily create API endpoints to install and control a network of devices through an application interface capable of sending HTTP requests.
 
 ## Installations
 * Python (Flask)
@@ -22,5 +22,7 @@ These files are for the RaspberryPi's web server.
 
 These files are for the Flask API and web interface.
 
+* HTML, CSS, and Javascript is used with Bootstrap to create a simple, mobile friendly browser interface
+* Flask is used to provide the REST API
 
 ___This repository includes a modified version of [Audio Reactive LED Strip](https://github.com/scottlawsonbc/audio-reactive-led-strip) as an example of an API endpoint function___
