@@ -1,5 +1,5 @@
 # IoT Controller
-Build an IoT controller using a RaspberryPi and a web server with Flask REST API on Nginx, Gunicorn, and Supervisor.
+Build an IoT controller using a RaspberryPi web server with Flask REST API on Nginx, Gunicorn, and Supervisor.
 Easily create API endpoints to install and control a local network of devices through an application interface.
 The controller can be used with its default browser interface or any application capable of sending HTTP requests.
 
