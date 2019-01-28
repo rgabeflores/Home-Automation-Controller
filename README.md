@@ -1,6 +1,6 @@
 # IoT Controller
-An IoT controller built using a RaspberryPi and a web server with Flask REST API on Nginx, Gunicorn, and Supervisor.
-Easily create API endpoints to install and control a home network of devices through an application interface.
+Build an IoT controller using a RaspberryPi and a web server with Flask REST API on Nginx, Gunicorn, and Supervisor.
+Easily create API endpoints to install and control a local network of devices through an application interface.
 The controller can be used with its default browser interface or any application capable of sending HTTP requests.
 
 
@@ -13,7 +13,7 @@ The controller can be used with its default browser interface or any application
 ### Web Server Config Files
     /Server
 
-These files are for the RaspberryPi's web server.
+These files are for the RaspberryPi's web server. For this project, a RaspberryPi was used, but any system running a version of Linux will also work.
 
 * __nginx.conf__ is used to configure the Nginx server for authentication, file locations, and application proxies
 * __dhcpcd.conf__ is used to configure a static IP address which is helpful for both developer access (SSH) and user access (Browser Interface, REST API)
