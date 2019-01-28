@@ -1,4 +1,4 @@
-# RaspberryPi-IoT-Controller-with-Flask
+# RaspberryPi IoT Controller
 A web controlled RaspberryPi server with Flask REST API on Nginx, Gunicorn, and Supervisor. Easily create API endpoints to install and control a network of devices through an application interface capable of sending HTTP requests.
 
 ## Installations
