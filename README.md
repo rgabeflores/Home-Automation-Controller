@@ -12,9 +12,9 @@ A web controlled RaspberryPi server with Flask REST API on Nginx, Gunicorn, and 
 
 These files are for the RaspberryPi's web server.
 
-* _nginx.conf_ is used to configure the Nginx server for authentication, file locations, and application proxies
-* _dhcpcd.conf_ is used to configure a static IP address which is helpful for both developer access (SSH) and user access (Browser Interface, REST API)
-* _supervisor.conf_ is used to configure Supervisor, which is used to automatically start the Flask server upon bootup
+* __nginx.conf__ is used to configure the Nginx server for authentication, file locations, and application proxies
+* __dhcpcd.conf__ is used to configure a static IP address which is helpful for both developer access (SSH) and user access (Browser Interface, REST API)
+* __supervisor.conf__ is used to configure Supervisor, which is used to automatically start the Flask server upon bootup
 
 
 ### Flask App Files
