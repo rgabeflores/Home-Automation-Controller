@@ -23,4 +23,4 @@ These files are for the RaspberryPi's web server.
 These files are for the Flask API and web interface.
 
 
-Includes a slightly modified version of https://github.com/scottlawsonbc/audio-reactive-led-strip as one example of IoT functions
+***Strong emphasized text*** This repository includes a modified version of https://github.com/scottlawsonbc/audio-reactive-led-strip as an example of an API endpoint function
