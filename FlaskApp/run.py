@@ -6,18 +6,22 @@ import sys
 
 app = Flask(__name__)
 
-test_flag = False # Acts as an ON/OFF switch for IoT function
+test_flag = False  # Acts as an ON/OFF switch for an IoT function
 
 
 @app.before_first_request
-def test_thread():
+def looping_thread():
+    '''
+        Runs before first request is processed.
+    '''
     def run():
         global test_flag
         while True:
             # With if statements, all IoT apps can be installed here
             if test_flag:  # while test_flag?
                 print("test_flag is ON")
-                sleep(1)
+
+            sleep(1)
 
     thread = threading.Thread(target=run)
     thread.start()
@@ -40,42 +44,21 @@ def test():
     else:
         print('Invalid Request')
         return 'Invalid Request'
-    return 'test() called'
+    return 'API Executed'
 
 
-'''
-    # Cases on toggle click
-    if TOGGLED_ON
-        if ALREADY_ON:
-            return flag("Already ON")
-        if NOT_ON:
-            if SUCCESSFUL:
-                return flag("Successfully turned on")
-            if UNSUCCESSFUL:
-                <toggle switch back to original state> # executed by JavaScript in UI
-                return flag("Unsuccessful")
-    if TOGGLED_OFF:
-        if ALREADY_OFF:
-            return flag("Already ON")
-        if NOT_ON:
-            if SUCCESSFUL:
-                return flag("Successfully turned off")
-            if UNSUCCESSFUL:
-                <toggle switch back to original state> # executed by JavaScript in UI
-                return flag("Unsuccessful")
-
-'''
-
-
-@app.route('/visualization')
+@app.route('/audio-reactive-led-strip')
 def visualization():
+    '''
+        API endpoint for Audio Reactive LED Strip
+    '''
     try:
-        import visualization
+        from scripts import visualization
     except:
         print('Something went wrong')
         # Return failure message
 
-    return ''  # Return success message
+    return ''  # Return a success message
 
 
 if __name__ == '__main__':
