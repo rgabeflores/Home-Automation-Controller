@@ -33,4 +33,4 @@ These files are for the Flask API and web interface.
 
 ## Contributors
 
-* [Gabriel Flores](https://github.com/rgabeflores)
+* [Gabriel Flores](https://github.com/rgabeflores) - [LinkedIn](https://www.linkedin.com/in/rgabrielflores/)
